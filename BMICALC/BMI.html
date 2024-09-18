@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALC</title>
+    <style> 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #aaf0d1;
+        }
+
+        .WindowMiddle {
+            padding: 50px;
+            background-color: #62bda0;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 25px;
+        }
+        
+
+        #txtfldHeight {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        #txtfldWeight {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ff1e00;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b3aa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="WindowMiddle">
+        <label for="txtfldHeight">Γραψε το υψος σου σε cm:</label>
+        <input type="text" id="txtfldHeight" name="txtfldHeight">
+        
+
+        <label for="txtfldWeight">Γραψε το βαρος σου :</label>
+        <input type="text" id="txtfldWeight" name="txtfldWeight">
+        <button type="button" >ΜΕΤΡΗΣΗ</button>
+    </div>
+<script>
+
+    'use strict';
+
+    
+
+
+    function calculateBMI(height,weight){
+        let result = weight / (height * height);
+        if (result < 18.5){
+            alert ("Underweight");
+        }
+        else if (result >= 18.5 && result < 24.9){
+            alert ("Normal weight");
+        }
+        else if (result >= 25  && result < 29.9){
+            alert ("Overweight");
+        }
+        else if (result >= 30  && result < 34.9){
+            alert ("Obesity Class 1 (Moderate)");
+        }
+        else if (result >= 35  && result < 39.9){
+            alert ("Obesity Class 2 (Severe)");
+        }
+        else {
+            alert ("Obesity Class 3 (Very Severe)");
+        } 
+        
+    }
+    document.querySelector('button').addEventListener('click', function() {
+    let height = parseFloat(document.getElementById('txtfldHeight').value / 100); 
+    let weight = parseFloat(document.getElementById('txtfldWeight').value);
+
+    calculateBMI(height, weight);
+});
+
+
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
