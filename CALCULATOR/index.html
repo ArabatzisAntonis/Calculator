@@ -5,260 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    
-    <style>
-      body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #474444;
-        }
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
-        .CalculatorWindow {
-            width: 300px;
-            height: 550px;
-            padding: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, 97px); 
-            grid-template-rows: repeat(8, 70px);  
-            gap: 5px;
-            background-color: #818383;
-            border: 5px solid #0c0b0b;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        
-        
-        #SceenTxtfld{
-          grid-column: span 3;
-          padding: 20px;
-          font-size: 24px;
-          border: 1px solid #000;
-          border-radius: 5px;
-          background-color: #f0f0f0;
-          text-align: right;
-          
-
-        }
-        
-        .button1 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button2 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button3 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button4 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button5 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button6 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button7 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button8 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button9 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .button0 {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-        
-        .buttonEqual {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #F5F5DC;
-          color: #080808;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-        
-        .buttonComma {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-        
-        .buttonMultiply {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .buttonAdd {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .buttonDivide{
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .buttonDecrease {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .buttonPercent {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #494949;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-        .buttonClear {
-          padding: 10px 3px;
-          border: 1px black;
-          border-radius: 4px;
-          background-color: #531212;
-          color: #fff;
-          font-size: 12px;
-          cursor: pointer;
-
-        }
-
-
-
-    </style>
-
-
-</head>
+  </head>
 
 <body>
 
   <div class = "CalculatorWindow">
     
-    <input type="text" id="SceenTxtfld" name="SceenTxtfld" value="0" readonly>
+    <input type="text" id="ScreenTxtfld" name="ScreenTxtfld" value="0" readonly>
     <button class="buttonClear" onclick="clearScreen()" >Clear</button>
     <button class="buttonMultiply" onclick="showonScreen('*')">X</button>
-    <button class="buttonDivide" onclick="showonScreen('/')">/</button>
+    <button class="buttonDivide" onclick="showonScreen('/')">÷</button>
     <button class="buttonAdd" onclick="showonScreen('+')">+</button>
     <button class="buttonDecrease" onclick="showonScreen('-')">-</button>
-    <button class="buttonPercent" onclick="showonScreen('%')">%</button>
+    <button class="buttonPercent" onclick="addPercent()">%</button>
     <button class="button7" onclick="showonScreen('7')">7</button>
     <button class="button8" onclick="showonScreen('8')">8</button>
     <button class="button9" onclick="showonScreen('9')">9</button>
@@ -269,54 +31,12 @@
     <button class="button2" onclick="showonScreen('2')">2</button>
     <button class="button3" onclick="showonScreen('3')">3</button>
     <button class="button0" onclick="showonScreen('0')">0</button>
-    <button class="buttonComma" onclick="showonScreen(',')">,</button>
+    <button class="buttonComma" onclick="showonScreen('.')">.</button>
     <button class="buttonEqual" onclick="Calculator()">=</button>
 
     </div>
 
-  <script>
-    'use strict';
-    
-    function showonScreen(value) {
-            let screen = document.getElementById('SceenTxtfld');
-             
-            if (screen.value === '0' || screen.value === '') {
-                screen.value = value;
-            } else {
-                screen.value += value;
-            }
-        }
-
-    function clearScreen() {
-            document.getElementById('SceenTxtfld').value = '0';
-    }
-
-    function Calculator() {
-    let screen = document.getElementById('SceenTxtfld');
-      try {
-          screen.value = eval(screen.value) || '0';
-      }  catch (e) {
-          screen.value = 'Error';
-      }
-}
   
-      
-
-      
-      
-  
-    
-    
-      
-    
-    
-    
-
-      
-    
-
-     
-  </script>
 
   
 

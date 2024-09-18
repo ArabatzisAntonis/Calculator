@@ -1,0 +1,238 @@
+
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #474444;
+        }
+
+        .CalculatorWindow {
+            width: 300px;
+            height: 550px;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 97px); 
+            grid-template-rows: repeat(8, 70px);  
+            gap: 5px;
+            background-color: #818383;
+            border: 5px solid #0c0b0b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        
+        #ScreenTxtfld{
+          grid-column: span 3;
+          padding: 20px;
+          font-size: 25px;
+          border: 1px solid #000;
+          border-radius: 5px;
+          background-color: #f0f0f0;
+          text-align: right;
+          
+
+        }
+        
+        .button1 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button2 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button3 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button4 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button5 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button6 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button7 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button8 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button9 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .button0 {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+        
+        .buttonEqual {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #F5F5DC;
+          color: #080808;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+        
+        .buttonComma {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+        
+        .buttonMultiply {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+
+        }
+
+        .buttonAdd {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+
+        }
+
+        .buttonDivide{
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 35px;
+          cursor: pointer;
+
+        }
+
+        .buttonDecrease {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 35px;
+          cursor: pointer;
+
+        }
+
+        .buttonPercent {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #494949;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+
+        }
+
+        .buttonClear {
+          padding: 10px 3px;
+          border: 1px black;
+          border-radius: 4px;
+          background-color: #531212;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+
+        }
+
+
+
+    
